@@ -21,7 +21,7 @@ For the avoidance of doubt:
 - All HTML files from the same server are linking the same JS and CSS files and versions
 - Since the version string on the JS and CSS files is the deployment timestamp, JS and CSS in the same HTML always have the same version string.
 
-### Task
+### The Problem
 
 Assume we want to deploy a cache for those HTML pages in front of those servers and would like to solve the performance issue that we have identified.
 
@@ -31,9 +31,11 @@ Our cache works like this:
 - If there is a deployment on the original server we assume that our cache gets purged afterwards, so we start with an empty cache and thus we will load the new content because we have cache misses.
 - We are only implementing the caching solution, we cannot change the logic on those servers.
 
-**Task is to write this function to make sure we solve the identified performance issue when the HTMLs are served from our cache.**
-
 ## Available Scripts
+
+### `npm install`
+
+To install npm packages
 
 ### `npm start`
 
